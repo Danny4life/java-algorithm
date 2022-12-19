@@ -30,10 +30,12 @@ public class AreYouPlayingBanjo {
     public static String areYouPlayingBanjo(String name) {
         // Program me!
 
+        // converting a string to character array
         char[] first = name.toCharArray();
 
         char c = first[0];
 
+        // convert char to string
         String s = Character.toString(c);
 
         if(s.equals("R") || s.equals("r")){
