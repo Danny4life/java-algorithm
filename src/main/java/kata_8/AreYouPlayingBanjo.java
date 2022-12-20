@@ -24,7 +24,7 @@ package kata_8;
 public class AreYouPlayingBanjo {
 
     public static void main(String[] args) {
-        System.out.println(areYouPlayingBanjo("bravo"));
+        System.out.println(areYouPlayingBanjo("rravo"));
     }
 
     public static String areYouPlayingBanjo(String name) {
