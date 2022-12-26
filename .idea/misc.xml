@@ -14,4 +14,14 @@
   <component name="ProjectType">
     <option name="id" value="jpab" />
   </component>
+  <component name="SuppressABINotification">
+    <option name="modulesWithSuppressedNotConfigured">
+      <set>
+        <option value="AlgoSoluton" />
+      </set>
+    </option>
+  </component>
+  <component name="SuppressKotlinCodeStyleNotification">
+    <option name="disableForAll" value="true" />
+  </component>
 </project>
