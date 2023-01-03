@@ -50,6 +50,8 @@ public class BuyStock {
             }
         }
 
-        return maxProfit;
+       return maxProfit;
     }
+
+
 }
