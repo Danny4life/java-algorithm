@@ -29,9 +29,11 @@ public class Kata {
 
     public static void main(String[] args) {
         System.out.println(checkForFactor(10, 2));
+
     }
 
     public static boolean checkForFactor(int base, int factor) {
         // your code here
+        return base % factor == 0;
     }
 }
