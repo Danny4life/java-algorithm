@@ -20,13 +20,32 @@ package kata_8;
 //    }
 //}
 
+//STEPS
+//-- Sort the array first
+//-- return the first value only
+//-- add *** between each letter
+
+import java.util.Arrays;
+
 public class SortAndStar {
 
     public static void main(String[] args) {
-        System.out.println(twoSort());
+        System.out.println(twoSort(new String[] {"bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"}));
+
+
     }
 
     public static String twoSort(String[] s) {
-        return null;
+        Arrays.sort(s);
+
+        String str = s[0];
+
+        String[] arr = str.split("");
+
+        String newStr = Arrays.toString(arr);
+
+
+
+        return newStr.join("***", arr);
     }
 }
