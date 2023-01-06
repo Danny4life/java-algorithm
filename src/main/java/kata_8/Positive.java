@@ -17,13 +17,32 @@ package kata_8;
 //        assertEquals(9, Positive.sum(new int[]{-1,2,3,4,-5}));
 //    }
 //}
+
+//STEPS
+//--get the sum of all numbers
+///- create an int variable 0
+///- loop through all the array
+///-assigned and concantenate all the loop array to the variable
+//-- return only the sum of the negative numbers
+///- check if any of the number is negative,if yes skip it
+//-- if there is no positive number, return zero
 public class Positive {
 
     public static void main(String[] args) {
-        System.out.println(sum(new int[]{1,2,3,4,5}));
+        System.out.println(sum(new int[]{}));
     }
 
     public static int sum(int[] arr){
-        return 0;
+
+        int sum = 0;
+        for(int i = 0; i < arr.length; i++){
+
+            if(arr[i] < 0) {
+                continue;
+            }
+            sum += arr[i];
+
+        }
+        return sum;
     }
 }
