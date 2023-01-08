@@ -35,6 +35,10 @@ package kata_8;
 //    }
 //}
 
+//STEPS
+//---loop through the array of integers
+//-- return the smallest integer
+
 public class SmallestIntegerFinder {
 
     public static void main(String[] args) {
@@ -43,6 +47,13 @@ public class SmallestIntegerFinder {
 
     public static int findSmallestInt(int[] args) {
 
-        return 0;
+        int res = args[0];
+
+        for(int i = 0; i < args.length; i++){
+            if(args[i] < res){
+                res = args[i];
+            }
+        }
+        return res;
     }
 }
