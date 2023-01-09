@@ -21,15 +21,19 @@ package kata_7;
 //
 //}
 
+//STEPS
+// loop through the strings
+// check if words have consonant, if yes return the number of consonants found in the string
+// if not return zero
+
 public class Cosonant {
 
     public static void main(String[] args) {
-        System.out.println(getCount("aaaaa"));
+        System.out.println(getCount("h^$&^#$&^elLo world"));
     }
 
     public static int getCount(String str) {
         // ...
-
-        return 0;
+        return str.replaceAll("[^A-Za-z]|[AEIOUaeiou]", "").length();
     }
 }
