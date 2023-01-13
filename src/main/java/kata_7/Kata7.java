@@ -67,14 +67,35 @@ package kata_7;
 //    }
 //}
 
+//STEPS
+//--sum two arrays and return the new array
+///- create an array holder
+///- loop through each array
+///- sum the loop and add to the array holder
+///- return the sum new array
+
+import java.util.Arrays;
+
+
 public class Kata7 {
     public static void main(String[] args) {
-        System.out.println();
+        int[][] arrayOfArrays = new int[][] { new int[] { 1, 2, 3, 4, 5, 6 }, new int[] { 7, 7, 7, 7, 7, 7 } };
+        System.out.println(Arrays.toString(addingShifted(arrayOfArrays, 3)));
     }
 
     public static int[] addingShifted(int[][] arrayOfArrays, int shift)
     {
-        return arrayOfArrays[0];
+
+        int[] result = new int[arrayOfArrays[0].length + (shift * (arrayOfArrays.length - 1))];
+
+        for(int i = 0; i < arrayOfArrays.length; i++){
+            for(int j =0; j < arrayOfArrays[i].length; j++) {
+                result[j + (shift * i)] += arrayOfArrays[i][j];
+            }
+        }
+
+        return result;
+
     }
 }
 
