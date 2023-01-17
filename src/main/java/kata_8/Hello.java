@@ -20,14 +20,22 @@ package kata_8;
 //                h.sayHello(name, "Phoenix", "Arizona"));
 //    }
 
+//STEPS
+//return name
+
+import java.util.Arrays;
 
 public class Hello {
 
     public static void main(String[] args) {
-        System.out.println(sayHello());
+        System.out.println(sayHello(new String[]{"John", "Smith", "Rose"}, "Phoenix", "Arizona"));
     }
 
     public static String sayHello(String [] name, String city, String state){
         //code here
+
+        return "Hello, " + String.join(" ", name) + "! Welcome to " + city + ", " + state + "!";
+
+
     }
 }
