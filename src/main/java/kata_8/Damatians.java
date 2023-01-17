@@ -26,7 +26,7 @@ package kata_8;
 public class Damatians {
 
     public static void main(String[] args) {
-        System.out.println();
+        System.out.println(howManyDalmatians(101));
     }
 
     public static String howManyDalmatians(int number) {
@@ -36,6 +36,8 @@ public class Damatians {
 //     String respond = number <= 10 ? dogs[0] (number <= 50 ? dogs[1] : (number = 101  dogs[3] : dogs[2]
 
 //     return respond
+
+
 
         return number <= 10 ? "Hardly any" :
                 number <= 50 ? "More than a handful!" :
