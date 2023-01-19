@@ -11,15 +11,18 @@ package kata_7;
 //        assertEquals(360, AngleSum.sumOfAngles(4));
 //    }
 //}
+
+///STEPS
+// find how to solve the sum of polygon
 public class AngleSums {
 
     public static void main(String[] args) {
-        System.out.println(sumOfAngles(3));
+        System.out.println(sumOfAngles(4));
     }
 
     public static int sumOfAngles(int n) {
         // Code here
 
-        return 0;
+        return (n -2) * 180;
     }
 }
