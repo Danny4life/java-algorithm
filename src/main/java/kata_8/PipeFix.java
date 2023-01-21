@@ -29,6 +29,11 @@ import java.util.Arrays;
 //        assertArrayEquals(new int[] {1,2,3}, Kata.pipeFix(new int[] {1,2,3}));
 //    }
 //}
+
+//STEPS
+//loop through the array
+// check the index of each number, if present, skip it, if not add the number
+
 public class PipeFix {
 
     public static void main(String[] args) {
@@ -37,5 +42,16 @@ public class PipeFix {
 
     public static int[] pipeFix(int[] numbers) {
         // Fix the pipes!
+
+      int min = numbers[0];
+      int max = numbers[numbers.length  - 1];
+      int size = max - min + 1;
+      int[] result = new int[size];
+
+      for(int i = 0; i < size; i++){
+          result[i] = i + min;
+      }
+
+      return result;
     }
 }
