@@ -27,16 +27,29 @@ package kata_8;
 //    }
 //}
 
+//STEPS
+// create an empty array with size 2
+// loop through q
+// multiply numbers in q by 2;
+
+
+import java.util.Arrays;
 
 public class Reflections {
     public static void main(String[] args) {
-        System.out.println();
+        System.out.println(Arrays.toString(reflectPoint(new int[]{2, 6}, new int[]{-2, -6})));
     }
 
     public static int[] reflectPoint(int[] p, int[] q) {
         //Write Code
 
-        return new int[0];
+
+       int[] points = new int[2];
+
+       points[0] = q[0] * 2 -p[0];
+       points[1] = q[1] * 2 -p[1];
+
+        return points;
     }
 
 }
