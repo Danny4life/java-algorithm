@@ -24,13 +24,26 @@ package kata_7;
 //}
 
 
+
+
+
 public class Snail {
 
     public static void main(String[] args) {
-        System.out.println(snail(3,2,1));
+        System.out.println(snail(10,3,1));
+
     }
 
     public static int snail(int column, int day, int night) {
-        return 0; // your code here
+
+        int days = 1;
+
+        while(day < column){
+            column -= (day - night);
+            days++;
+        }
+
+        return days; // your code here
+
     }
 }
