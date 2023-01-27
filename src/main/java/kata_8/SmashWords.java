@@ -31,15 +31,22 @@ package kata_8;
 //
 //}
 
+//STEPS
+// convert the array of words to string
+
+import java.util.Arrays;
+
 public class SmashWords {
 
     public static void main(String[] args) {
-        System.out.println(smash("Bilal"));
+        System.out.println(smash("Bilal", "ghad"));
     }
 
     public static String smash(String... words) {
         // TODO Write your code below this comment please
 
-        return "";
+       // String str = String.join(" ", words);
+
+        return String.join(" ", words);
     }
 }
