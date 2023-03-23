@@ -1,4 +1,4 @@
-package kata_7;
+package alogorithm_not_solved;
 
 //
 //The police have placed radars that will detect those vehicles that exceed the speed limit on that road.
@@ -31,15 +31,22 @@ package kata_7;
 //    }
 //}
 
+//STEPS
+//--set the km to the various fines
+//--loop through the speed
+//--
+
 
 public class KataSpeed {
 
     public static void main(String[] args) {
-        System.out.println(speedLimit(60, new int[] {80,70,60 }));
+        System.out.println(speedLimit(220, new int[] {120,110,100 }));
     }
 
     public static int speedLimit(final int speed, final int[] signals) {
         //Write here your code :D
+
+
         return 0;
     }
 }
