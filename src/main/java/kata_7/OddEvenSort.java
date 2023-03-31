@@ -58,21 +58,33 @@ public class OddEvenSort {
 
     public static String sortMyString(String s) {
 
-        String[] str = s.split("");
-        StringBuilder even = new StringBuilder();
-        StringBuilder odd = new StringBuilder();
-        StringBuilder res = new StringBuilder();
-        for(int i = 0; i < str.length; i++){
+//        String[] str = s.split("");
+            StringBuilder even = new StringBuilder();
+            StringBuilder odd = new StringBuilder();
+//        StringBuilder res = new StringBuilder();
+//        for(int i = 0; i < str.length; i++){
+//            if(i % 2 == 0){
+//                even.append(str[i]);
+//            }
+//            if(i % 2 == 1){
+//                odd.append(str[i]);
+//
+//            }
+//            res = new StringBuilder(even + " " + odd);
+//
+//        }
+//        return res.toString();
+
+        for(int i = 0; i < s.length(); i++){
+            char c = s.charAt(i);
+
             if(i % 2 == 0){
-                even.append(str[i]);
+                even.append(c);
+            }else {
+                odd.append(c);
             }
-            if(i % 2 == 1){
-                odd.append(str[i]);
-
-            }
-            res = new StringBuilder(even + " " + odd);
-
         }
-        return res.toString();
+
+        return even.toString() + " " + odd.toString();
     }
 }
