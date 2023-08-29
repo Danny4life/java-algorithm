@@ -32,6 +32,7 @@ package kata_8;
 // 2. return true
 // 3. return false
 
+//https://www.codewars.com/kata/59ca8246d751df55cc00014c/train/java
 public class Hero {
 
     public static void main(String[] args) {
