@@ -45,6 +45,7 @@ public class BillBoard {
     // 3.add the price to the total cost each time
 
 
+    // https://www.codewars.com/kata/570e8ec4127ad143660001fd/train/java
 
     public static void main(String[] args) {
         System.out.println(billboard("Hadufuns John", 20));
