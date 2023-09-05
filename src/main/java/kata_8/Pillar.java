@@ -33,6 +33,9 @@ package kata_8;
 // STEPS
 /// 1 number of pillars must be > 1
 
+//link
+// https://www.codewars.com/kata/5bb0c58f484fcd170700063d/train/java
+
 
 public class Pillar {
 
