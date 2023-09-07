@@ -1,5 +1,7 @@
 package tutorial;
 
+import javax.xml.namespace.QName;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -9,5 +11,12 @@ public class Main {
         
         System.out.println(tom.id);
         System.out.println(tom.name);
+
+        System.out.println(name(0));
+    }
+
+
+    public static int name(int name){
+        return 50;
     }
 }
