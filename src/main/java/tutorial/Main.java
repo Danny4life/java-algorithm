@@ -17,6 +17,12 @@ public class Main {
 
         int data = 150;
 
+        int x = 10;
+
+        System.out.println(x++);
+        System.out.println(x++);
+        System.out.println(x++);
+
         System.out.println(data);
     }
 

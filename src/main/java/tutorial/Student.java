@@ -8,6 +8,8 @@ public class Student {
 
     static int localNums = 9;
 
+    char nameS = 'A';
+
 
     public void localVariable(){
         int localNum = 7;
