@@ -38,43 +38,31 @@ public class Main {
 //                default statement;
 //        }
 
-        int num = 20;
+ //       for(initialization, condition, increment/decrement){
+//        block statement
+//    }
 
-        switch (num){
-            case 20:
-                System.out.println("number is 20");
-                break;
+     for(int i = 0; i <= 2; i++){
 
-            case 10:
-                System.out.println("number is 10");
-                break;
+         for(int j = i; j <= 5; j++){
+             if(j == 4){
+                 continue;
+             }
+             System.out.println(j);
+         }
 
-            default:
-                System.out.println(num);
+     }
 
-        }
 
-        String name = "Segun";
-
-        switch (name){
-            case "Bayo":
-                System.out.println("Wrong, this is not my name");
-                break;
-
-            case "Emeka":
-                System.out.println("Wrong, this is not my name");
-                break;
-
-            case "Segun":
-                System.out.println("Correct, this is my name " + name);
-                break;
-
-            default:
-                System.out.println(name);
-        }
 
 
     }
+
+    /**
+     * for loop challenge
+     * using for loop sum 20 to give you a total value of 190.
+     */
+
 
 
 

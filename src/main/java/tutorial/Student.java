@@ -19,4 +19,7 @@ public class Student {
     // create two instance variable and add them together to print out 245;
     // create two string with your firstname and lastname and join them together with a spcace in between
 
+//    for(initialization, condition, increment/decrement){
+//        block statement
+//    }
 }

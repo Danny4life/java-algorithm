@@ -9,4 +9,7 @@ public class Links {
 
     //unlucky days 7
     //https://www.codewars.com/kata/56eb0be52caf798c630013c0/train/java
+
+    // sum list 7
+    // https://www.codewars.com/kata/5993fb6c4f5d9f770c0000f2/train/java
 }
