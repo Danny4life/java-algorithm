@@ -12,4 +12,7 @@ public class Links {
 
     // sum list 7
     // https://www.codewars.com/kata/5993fb6c4f5d9f770c0000f2/train/java
+
+    // reverse a bit 7
+   // https://www.codewars.com/kata/5959ec605595565f5c00002b/train/java
 }
