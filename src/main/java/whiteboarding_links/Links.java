@@ -15,4 +15,7 @@ public class Links {
 
     // reverse a bit 7
    // https://www.codewars.com/kata/5959ec605595565f5c00002b/train/java
+
+    // decimal digits 7
+    //https://www.codewars.com/kata/58fa273ca6d84c158e000052/train/java
 }

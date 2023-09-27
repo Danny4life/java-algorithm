@@ -1,24 +1,19 @@
 package tutorial;
 
 import javax.xml.namespace.QName;
+import java.math.BigDecimal;
 import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
 
+        /**
+         * use switch statement to solve this challenge
+         * create a program to check vowel or consonant
+         * vowels are A, E, I, O, U
+         */
 
-        int number = 12345678;
-        int reverse = 0;
-
-        for(int i = number; i != 0; i = i / 10){
-            int remainder = i % 10;
-
-            reverse = reverse * 10 + remainder;
-        }
-
-        System.out.println(reverse);
-        System.out.println(1234567 % 10);
 
     }
 
