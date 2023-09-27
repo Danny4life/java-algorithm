@@ -14,6 +14,16 @@ public class Main {
          * vowels are A, E, I, O, U
          */
 
+       Account a1 = new Account();
+       a1.insert(2070300, "Segun", 500000);
+       a1.display();
+       a1.checkBalance();
+       a1.deposit(40000);
+       a1.checkBalance();
+       a1.withdrawn(500000);
+       a1.checkBalance();
+       a1.withdrawn(100000);
+
 
     }
 
