@@ -5,14 +5,17 @@ public class Student1 {
     int rollNo;
     String name;
 
-    void insertRecords(int r, String n){
-        rollNo = r;
-        name = n;
+    public Student1(int rollNo, String name) {
+        this.rollNo = rollNo;
+        this.name = name;
     }
 
-    void displayRecords(){
-        System.out.println(rollNo + " " + name);
+    static String college = "Decagon";
+
+    void display(){
+        System.out.println(rollNo + " " + name + " " + college);
     }
+
 
 
 }

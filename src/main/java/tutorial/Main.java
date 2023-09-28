@@ -6,6 +6,8 @@ import java.util.Arrays;
 
 public class Main {
 
+    static int a = 50;
+
     public static void main(String[] args) {
 
         /**
@@ -14,15 +16,25 @@ public class Main {
          * vowels are A, E, I, O, U
          */
 
-       Account a1 = new Account();
-       a1.insert(2070300, "Segun", 500000);
-       a1.display();
-       a1.checkBalance();
-       a1.deposit(40000);
-       a1.checkBalance();
-       a1.withdrawn(500000);
-       a1.checkBalance();
-       a1.withdrawn(100000);
+      Counter c1 = new Counter();
+      Counter c2 = new Counter();
+      Counter c3 = new Counter();
+
+        System.out.println("***************************");
+
+     CounterStatic c4 = new CounterStatic();
+     CounterStatic c5 = new CounterStatic();
+     CounterStatic c6 = new CounterStatic();
+     CounterStatic c7 = new CounterStatic();
+
+     int res = CounterStatic.cube(5);
+
+        System.out.println(res);
+
+
+
+
+
 
 
     }
