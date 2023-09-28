@@ -18,4 +18,7 @@ public class Links {
 
     // decimal digits 7
     //https://www.codewars.com/kata/58fa273ca6d84c158e000052/train/java
+
+    // gimme letters 7
+    // https://www.codewars.com/kata/6512b3775bf8500baea77663/train/java
 }
