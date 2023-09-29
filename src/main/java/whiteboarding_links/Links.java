@@ -21,4 +21,7 @@ public class Links {
 
     // gimme letters 7
     // https://www.codewars.com/kata/6512b3775bf8500baea77663/train/java
+
+    // numbers in string 7
+    // https://www.codewars.com/kata/59dd2c38f703c4ae5e000014/train/java
 }
