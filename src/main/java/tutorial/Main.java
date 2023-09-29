@@ -16,26 +16,14 @@ public class Main {
          * vowels are A, E, I, O, U
          */
 
-      Counter c1 = new Counter();
-      Counter c2 = new Counter();
-      Counter c3 = new Counter();
+      Address a1 = new Address("Benin", "Edo", "Nigeria");
+      Address a2 = new Address("London", "London", "England");
 
-        System.out.println("***************************");
+      Employee e1 = new Employee(1, "Peter", a1);
+      Employee e2 = new Employee(2, "Segun", a2);
 
-     CounterStatic c4 = new CounterStatic();
-     CounterStatic c5 = new CounterStatic();
-     CounterStatic c6 = new CounterStatic();
-     CounterStatic c7 = new CounterStatic();
-
-     int res = CounterStatic.cube(5);
-
-        System.out.println(res);
-
-
-
-
-
-
+      e1.display();
+      e2.display();
 
     }
 
