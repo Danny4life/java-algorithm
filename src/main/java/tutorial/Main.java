@@ -16,14 +16,11 @@ public class Main {
          * vowels are A, E, I, O, U
          */
 
-      Address a1 = new Address("Benin", "Edo", "Nigeria");
-      Address a2 = new Address("London", "London", "England");
+        System.out.println(Adder.add(1,2));
+        System.out.println(Adder.add(1,2,3));
 
-      Employee e1 = new Employee(1, "Peter", a1);
-      Employee e2 = new Employee(2, "Segun", a2);
 
-      e1.display();
-      e2.display();
+
 
     }
 

@@ -24,4 +24,7 @@ public class Links {
 
     // numbers in string 7
     // https://www.codewars.com/kata/59dd2c38f703c4ae5e000014/train/java
+
+    //encode cypher 7
+    // https://www.codewars.com/kata/592e830e043b99888600002d/train/java
 }
