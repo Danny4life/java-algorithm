@@ -13,10 +13,10 @@ public class Links {
     // sum list 7
     // https://www.codewars.com/kata/5993fb6c4f5d9f770c0000f2/train/java
 
-    // reverse a bit 7
+    // reverse a bit 7 done
    // https://www.codewars.com/kata/5959ec605595565f5c00002b/train/java
 
-    // decimal digits 7
+    // decimal digits 7 done
     //https://www.codewars.com/kata/58fa273ca6d84c158e000052/train/java
 
     // gimme letters 7
@@ -27,4 +27,7 @@ public class Links {
 
     //encode cypher 7
     // https://www.codewars.com/kata/592e830e043b99888600002d/train/java
+
+    // bead count
+    // https://www.codewars.com/kata/58712dfa5c538b6fc7000569/train/java
 }
