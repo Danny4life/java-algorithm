@@ -30,4 +30,7 @@ public class Links {
 
     // bead count
     // https://www.codewars.com/kata/58712dfa5c538b6fc7000569/train/java
+
+    // compose
+    // https://www.codewars.com/kata/56f253dd75e340ff670002ac/train/java
 }

@@ -52,6 +52,26 @@ public class Compose {
     public static String compose(String s1, String s2) {
         // your code
 
-        return "";
+        String[] l1 = s1.split("\n");
+        String[] l2 = s2.split("\n");
+
+        int newLine = l1.length;
+
+        StringBuilder sb = new StringBuilder();
+
+        for(int i = 0; i < newLine; i++)
+           // StringBuilder sb1 = new StringBuilder();
+           sb.append(l1[i].substring(0, i + 1) + l2[newLine-i-1].substring(0, newLine - 1)).append("\n");
+
+        return sb.toString().trim();
     }
 }
+
+
+//    String[] s1Lines = s1.split("\n");
+//    String[] s2Lines = s2.split("\n");
+//    int n = s1Lines.length;
+//    StringBuilder sb = new StringBuilder();
+//		for(int i=0;i<n;i++)
+//        sb.append(s1Lines[i].substring(0, i+1) + s2Lines[n-1-i].substring(0,n-i)).append("\n");
+//        return sb.toString().trim();
