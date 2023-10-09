@@ -33,4 +33,7 @@ public class Links {
 
     // compose
     // https://www.codewars.com/kata/56f253dd75e340ff670002ac/train/java
+
+    // ones and zeros
+    // https://www.codewars.com/kata/578553c3a1b8d5c40300037c/train/java
 }

@@ -16,8 +16,8 @@ public class Main {
          * vowels are A, E, I, O, U
          */
 
-        System.out.println(Adder.add(1,2));
-        System.out.println(Adder.add(1,2,3));
+       Honda h1 = new Honda();
+       h1.run();
 
 
 
