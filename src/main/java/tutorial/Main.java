@@ -16,11 +16,11 @@ public class Main {
          * vowels are A, E, I, O, U
          */
 
-       Honda h1 = new Honda();
-       h1.run();
+   String s = "hello";
+   StringBuffer sb = new StringBuffer(s);
 
 
-
+        System.out.println(sb.reverse());
 
     }
 

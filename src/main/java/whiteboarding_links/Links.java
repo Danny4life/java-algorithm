@@ -28,10 +28,10 @@ public class Links {
     //encode cypher 7
     // https://www.codewars.com/kata/592e830e043b99888600002d/train/java
 
-    // bead count
+    // bead count  done
     // https://www.codewars.com/kata/58712dfa5c538b6fc7000569/train/java
 
-    // compose
+    // compose done
     // https://www.codewars.com/kata/56f253dd75e340ff670002ac/train/java
 
     // ones and zeros
