@@ -39,4 +39,7 @@ public class Links {
 
     // middle character
     // https://www.codewars.com/kata/56747fd5cb988479af000028/train/java
+
+    //list filtering
+    // https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/java
 }
