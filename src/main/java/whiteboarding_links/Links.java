@@ -34,12 +34,15 @@ public class Links {
     // compose done
     // https://www.codewars.com/kata/56f253dd75e340ff670002ac/train/java
 
-    // ones and zeros
+    // ones and zeros new
     // https://www.codewars.com/kata/578553c3a1b8d5c40300037c/train/java
 
-    // middle character
+    // middle character new
     // https://www.codewars.com/kata/56747fd5cb988479af000028/train/java
 
-    //list filtering
+    //list filtering new
     // https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/java
+
+    // reduce my fraction new
+    // https://www.codewars.com/kata/576400f2f716ca816d001614/train/java
 }
