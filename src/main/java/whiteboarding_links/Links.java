@@ -46,6 +46,6 @@ public class Links {
     // reduce my fraction new
     // https://www.codewars.com/kata/576400f2f716ca816d001614/train/java
 
-    // kata 7 remove duplicates
+    // kata 7 remove duplicates new
     // https://www.codewars.com/kata/5ba38ba180824a86850000f7/train/java
 }
