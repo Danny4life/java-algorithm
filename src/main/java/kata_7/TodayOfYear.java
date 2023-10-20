@@ -32,11 +32,38 @@ package kata_7;
 public class TodayOfYear {
 
     public static void main(String[] args) {
-        System.out.println(toDayOfYear(new int[]{25, 5}));
+        System.out.println(toDayOfYear(new int[]{17,  5, 1991}));
+
+
     }
 
     public static int toDayOfYear(int[] date){
         //Happy Coding!
-        return 1;
+        int givenDay = date[0];
+        int givenMonth = date[1];
+        int givenYear = date[2];
+
+        // Array to store the number of days in each month
+        int[] numberOfDaysInMonth = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+        // check for leap year
+        if((givenYear % 4 == 0 && givenYear % 100 != 0) || givenYear % 400 == 0){
+            numberOfDaysInMonth[2] = 29;
+        }
+
+        int dayOfYear = 0;
+
+        // Sum up days for each month leading up to the provided date
+
+        for(int i = 0; i < givenMonth; i++){
+            dayOfYear = dayOfYear + numberOfDaysInMonth[i];
+        }
+
+
+        // Add the day of the month
+
+        dayOfYear = dayOfYear + givenDay;
+
+        return dayOfYear;
     }
 }

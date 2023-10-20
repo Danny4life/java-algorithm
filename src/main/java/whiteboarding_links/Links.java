@@ -48,4 +48,7 @@ public class Links {
 
     // kata 7 remove duplicates new
     // https://www.codewars.com/kata/5ba38ba180824a86850000f7/train/java
+
+    // kaa 7 today of year new
+    // https://www.codewars.com/kata/5a1ebe0d46d843454100004c/train/java
 }
