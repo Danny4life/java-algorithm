@@ -12,6 +12,9 @@ public class MultipleTryCatchExceptionEx {
         catch (ArrayIndexOutOfBoundsException e){
             System.out.println("Arrayoutofbound exception occurs");
         }
+        catch (NullPointerException e){
+            System.out.println("Null pointer exception occurs");
+        }
         catch (Exception e){
             System.out.println("Parent exception occurs");
         }
