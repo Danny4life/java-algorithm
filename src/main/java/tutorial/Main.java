@@ -10,7 +10,7 @@ public class Main {
         TestCustomException obj = new TestCustomException();
 
         try{
-            TestCustomException.validate(13);
+            TestCustomException.validate(23);
         } catch (InvalidAgeException ex) {
             System.out.println("Caught the exception");
 
