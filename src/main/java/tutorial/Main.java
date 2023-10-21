@@ -6,8 +6,18 @@ import java.util.Arrays;
 
 public class Main {
 
+    public static void main(String[] args) {
+        TestCustomException obj = new TestCustomException();
 
+        try{
+            TestCustomException.validate(13);
+        } catch (InvalidAgeException ex) {
+            System.out.println("Caught the exception");
 
+            System.out.println("Exception occured " + ex);
+        }
 
+        System.out.println("Rest of the code...");
+    }
 
 }
