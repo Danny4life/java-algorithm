@@ -67,34 +67,12 @@ public class Week9Challenge {
 
     public static int sjf(ArrayList<Integer> jobs, int index) {
 
-        // Check if the index is valid.
-        if (index < 0 || index >= jobs.size()) {
-            return -1;
-        }
-
-        // Sort the jobs in ascending order of burst time.
-        Collections.sort(jobs);
-
-        // Keep track of the current time.
-        int currentTime = 0;
-
-        // Iterate over the jobs in sorted order.
+        int res = 0;
         for (int i = 0; i < jobs.size(); i++) {
-            // Check if the current job has already finished executing.
-            if (currentTime >= jobs.get(i)) {
-                continue;
+            if (jobs.get(i) < jobs.get(index) || (jobs.get(i) == jobs.get(index) && i <= index)) {
+                res += jobs.get(i);
             }
-
-            // If the current job is the one we're interested in, return the current time.
-            if (i == index) {
-                return currentTime;
-            }
-
-            // Update the current time by the burst time of the current job.
-            currentTime += jobs.get(i);
         }
-
-        // If we reach this point, the job at the given index does not exist.
-        return -1;
+        return res;
     }
 }
