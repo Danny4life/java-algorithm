@@ -7,17 +7,12 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        TestCustomException obj = new TestCustomException();
+        Table obj = new Table();
+        Table.Mythread1 t1 = new Table.Mythread1(obj);
+        Table.Mythread2 t2 = new Table.Mythread2(obj);
 
-        try{
-            TestCustomException.validate(23);
-        } catch (InvalidAgeException ex) {
-            System.out.println("Caught the exception");
+        t1.start();
+        t2.start();
 
-            System.out.println("Exception occured " + ex);
-        }
-
-        System.out.println("Rest of the code...");
     }
-
 }
