@@ -15,8 +15,11 @@ public class InputStreamEx1 {
 
         try{
             FileInputStream in = new FileInputStream(desktopPath);
-           int i = in.read();
-            System.out.println((char)i);
+           int i = 0;
+           while((i = in.read()) != -1){
+               System.out.println((char)i);
+           }
+
 
             in.close();
         } catch (IOException e) {
