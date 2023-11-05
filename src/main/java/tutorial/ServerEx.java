@@ -1,7 +1,6 @@
 package tutorial;
 
-import java.io.DataInputStream;
-import java.io.IOException;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -11,8 +10,22 @@ public class ServerEx {
             ServerSocket ss = new ServerSocket(6666);
             Socket s = ss.accept();
             DataInputStream dis = new DataInputStream(s.getInputStream());
-            String str = (String) dis.readUTF();
-            System.out.println("message = " + str);
+            DataOutputStream dout = new DataOutputStream(s.getOutputStream());
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+            String str = "";
+            String str2 = "";
+
+            while(!str.equals("stop")){
+                str = dis.readUTF();
+                System.out.println("Client says: " + str);
+                str2 = br.readLine();
+                dout.writeUTF(str2);
+                dout.flush();
+
+            }
+            dis.close();
+            s.close();
             ss.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
