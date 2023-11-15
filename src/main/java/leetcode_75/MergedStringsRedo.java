@@ -1,8 +1,5 @@
 package leetcode_75;
 
-//1768. Merge Strings Alternately
-
-
 
 //You are given two strings word1 and word2. Merge the strings by adding
 //        letters in alternating order, starting with word1. If a string
@@ -47,37 +44,27 @@ package leetcode_75;
 
 
 
-
-
-
-//Though process
-// 1. use string builder for effective concatenation
-// 2. get the maximum length of both words
-// 3. loop through maximum lenght of both words
-// 4. check if the character for both word1 and word2 are available, if yes append it
-// 5. return the string
-
-public class MergeStrings {
+public class MergedStringsRedo {
     public static void main(String[] args) {
-        System.out.println(mergeAlternately( "abctyu", "pqre"));
+        System.out.println(mergeAlternately( "abc", "pqrde"));
     }
 
     public static String mergeAlternately(String word1, String word2) {
 
-        StringBuilder merged = new StringBuilder();
-
+        StringBuilder sb = new StringBuilder();
         int maxLen = Math.max(word1.length(), word2.length());
 
         for(int i = 0; i < maxLen; i++){
             if(i < word1.length()){
-                merged.append(word1.charAt(i));
+                sb.append(word1.charAt(i));
             }
 
             if(i < word2.length()){
-                merged.append(word2.charAt(i));
+                sb.append(word2.charAt(i));
             }
         }
 
-        return merged.toString();
+        return sb.toString();
+
     }
 }
