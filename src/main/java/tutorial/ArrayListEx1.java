@@ -5,16 +5,18 @@ import java.util.*;
 public class ArrayListEx1 {
 
     public static void main(String[] args) {
-        ArrayList<String> list = new ArrayList<>();
+
+        List<String> fruitList = new ArrayList<>();
+        fruitList.add("mango");
+        fruitList.add("banana");
+        fruitList.add("rice");
+        fruitList.add("pawpaw");
+
+        String [] array = fruitList.toArray(new String[fruitList.size()]);
+
+        System.out.println("List: " + fruitList);
+        System.out.println("array: " + Arrays.toString(array));
 
 
-        System.out.println("is array list empty :" + list.isEmpty());
-
-        list.add("one");
-        list.add("one");
-        list.add("one");
-
-        System.out.println(list);
-        System.out.println("after insertion : " + list.isEmpty());
     }
 }
