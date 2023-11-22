@@ -6,17 +6,22 @@ public class ArrayListEx1 {
 
     public static void main(String[] args) {
 
-        List<String> fruitList = new ArrayList<>();
-        fruitList.add("mango");
-        fruitList.add("banana");
-        fruitList.add("rice");
-        fruitList.add("pawpaw");
+       PriorityQueue<String> queue = new PriorityQueue<String>();
 
-        String [] array = fruitList.toArray(new String[fruitList.size()]);
+       queue.add("one");
+       queue.add("two");
+       queue.add("three");
+       queue.add("four");
+        queue.add("five");
 
-        System.out.println("List: " + fruitList);
-        System.out.println("array: " + Arrays.toString(array));
 
+
+        System.out.println("Head: " + queue.element());
+        System.out.println("Peek: " + queue.peek());
+
+        for(String q : queue){
+            System.out.println(q);
+        }
 
     }
 }
