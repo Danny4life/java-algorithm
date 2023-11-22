@@ -3,7 +3,7 @@ package string_methods;
 public class ReverseString {
 
     public static void main(String[] args) {
-        System.out.println(reverseString("bat"));
+        System.out.println(reverseString("hello world"));
     }
 
     public static String reverseString(String str){
