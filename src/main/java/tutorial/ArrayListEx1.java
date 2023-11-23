@@ -6,22 +6,15 @@ public class ArrayListEx1 {
 
     public static void main(String[] args) {
 
-       PriorityQueue<String> queue = new PriorityQueue<String>();
+      HashMap<Integer, String> map = new HashMap<>();
+      map.put(1, "mango");
+      map.put(2, "orange");
+      map.put(3, "banana");
+      map.put(4, "carrot");
 
-       queue.add("one");
-       queue.add("two");
-       queue.add("three");
-       queue.add("four");
-        queue.add("five");
-
-
-
-        System.out.println("Head: " + queue.element());
-        System.out.println("Peek: " + queue.peek());
-
-        for(String q : queue){
-            System.out.println(q);
-        }
+      for(Map.Entry m : map.entrySet()){
+          System.out.println(m.getValue());
+      }
 
     }
 }
