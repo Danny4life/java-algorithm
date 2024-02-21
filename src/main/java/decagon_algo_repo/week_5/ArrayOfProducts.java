@@ -44,15 +44,28 @@ package decagon_algo_repo.week_5;
 //    }
 //}
 
+// takes a non empty array
+// loop thorough the array
+// multiple each element by the next element and skip the first element on the array
+
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class ArrayOfProducts {
     public static void main(String[] args) {
+        System.out.println(arrayOfProducts(Arrays.asList(5,1,4,2)));
 
     }
 
     public static List<Integer> arrayOfProducts(List<Integer> array) {
 
-        return null;
+        return array;
     }
 }
+
+
+
+
