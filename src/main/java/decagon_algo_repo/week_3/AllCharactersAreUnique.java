@@ -87,13 +87,23 @@ package decagon_algo_repo.week_3;
 //    }
 //}
 
+import java.util.HashSet;
+import java.util.List;
+
 public class AllCharactersAreUnique {
     public static void main(String[] args) {
+        System.out.println(hasUniqueChars("abcdefghi"));
 
     }
 
     public static boolean hasUniqueChars(String str) {
+        HashSet<Character> s = new HashSet<>();
 
+        for(char c : str.toCharArray()){
+            if(!s.add(c)){
+                return false;
+            }
+        }
         return true;
     }
 }
