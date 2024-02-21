@@ -61,8 +61,32 @@ public class ArrayOfProducts {
     }
 
     public static List<Integer> arrayOfProducts(List<Integer> array) {
+        int n = array.size();
+        List<Integer> leftProduct = new ArrayList<>(n);
+        List<Integer> rightProduct = new ArrayList<>(n);
+        List<Integer> res = new ArrayList<>(n);
 
-        return array;
+        // Calculate left products
+        int product = 1;
+        for(int i = 0; i < n; i++){
+            leftProduct.add(product);
+            product *= array.get(i);
+        }
+        // Reset product for right products calculation
+        product = 1;
+        // Calculate right products
+        for (int i = n - 1; i >= 0; i--){
+            // Add at index 0 to maintain order
+            rightProduct.add(0, product);
+            product *= array.get(i);
+        }
+        // Calculate the final result
+        for(int i = 0; i < n; i++){
+            res.add(leftProduct.get(i) * rightProduct.get(i));
+        }
+
+        return res;
+
     }
 }
 
