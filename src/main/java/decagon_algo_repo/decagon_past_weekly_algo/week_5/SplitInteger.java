@@ -65,17 +65,43 @@ package decagon_algo_repo.decagon_past_weekly_algo.week_5;
 
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class SplitInteger {
     public static void main(String[] args) {
+        System.out.println(splitInteger(2, 2));
 
     }
 
     public static List<Integer> splitInteger(int num, int parts) {
 
+        // NOTE the method signature has a type of List and as such should return a List
 
-        return new ArrayList<Integer>();
+        //step 1 calculate the base number by dividing num with parts
+        int baseNum = num /parts;
+
+        //step 2 calculate the remainder number by getting the modulo between num and parts
+        int remainderNum = num % parts;
+
+
+        //step 3 initialize an empty list to hold the parts that will be return as a list
+        List<Integer> result = new ArrayList<>();
+
+        //step 4 fill the list with the base values by looping thorough the parts and adding the base number
+        for(int i = 0; i < parts; i++){
+            result.add(baseNum);
+        }
+
+        //step 5 distribute the remainder number by looping through the remainder number to set the remainder value
+        //among the few elements
+        for(int i = 0; i < remainderNum; i++){
+            result.set(i, result.get(i) + 1);
+        }
+        // return the result as a list
+
+        return result;
+
     }
 }
 
