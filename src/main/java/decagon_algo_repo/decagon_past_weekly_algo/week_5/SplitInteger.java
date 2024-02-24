@@ -1,5 +1,7 @@
 package decagon_algo_repo.decagon_past_weekly_algo.week_5;
 
+// given already
+
 //Task
 //        In this challenge, you will write a function to divide an integer into a number of even parts,
 //        which will be returned in a result array. Summing the integers in this result array will
@@ -104,6 +106,9 @@ public class SplitInteger {
 
     }
 }
+
+
+
 
 
 

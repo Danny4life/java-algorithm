@@ -1,5 +1,7 @@
 package decagon_algo_repo.decagon_past_weekly_algo.week_6;
 
+// given already
+
 //Task
 //        An isogram is a word that has no repeating letters, consecutive or non-consecutive.
 //
