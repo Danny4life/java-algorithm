@@ -75,14 +75,28 @@ package decagon_algo_repo.decagon_past_weekly_algo.week_6;
 //    }
 //}
 
+// loop through the letters
+// check if the current letter is equal to a previous letter
+// if yes return true, else return false
+
+
+import java.util.HashSet;
 
 public class Isogram {
     public static void main(String[] args) {
+        System.out.println(isIsogram("moose"));
 
     }
 
     public static boolean isIsogram(String str) {
+        HashSet<Character> set = new HashSet<>();
 
+        for(char s : str.toCharArray()){
+            if(set.contains(s)){
+                return false;
+            }
+            set.add(s);
+        }
         return true;
     }
 }

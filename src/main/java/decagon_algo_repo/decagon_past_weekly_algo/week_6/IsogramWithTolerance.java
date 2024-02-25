@@ -1,5 +1,7 @@
 package decagon_algo_repo.decagon_past_weekly_algo.week_6;
 
+// Given Already
+
 //Task
 //        In this challenge, your task is to write a function to identify
 //        heterograms with k-tolernance. The signature is isogramWithTolerance(s: string, k: int) -> bool.
@@ -129,3 +131,6 @@ public class IsogramWithTolerance {
         return true;
     }
 }
+
+
+

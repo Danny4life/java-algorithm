@@ -1,5 +1,8 @@
 package decagon_algo_repo.decagon_past_weekly_algo.week_7;
 
+//Given already
+
+
 //Background
 //        Deoxyribonucleic acid (DNA) is a chemical found in the nucleus of cells and carries the
 //        "instructions" for the development and functioning of living organisms.
@@ -112,3 +115,11 @@ public class DNACompliments {
         return "";
     }
 }
+
+
+
+
+
+
+
+
