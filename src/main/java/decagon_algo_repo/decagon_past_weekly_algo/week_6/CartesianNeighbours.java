@@ -65,7 +65,7 @@ public class CartesianNeighbours {
 
         }
 
-        // convert the list into a 2D array;
+        // converting the list into a 2D array;
         int[][] res = new int[neighbours.size()][2];
 
         for(int k = 0; k < neighbours.size(); k++){
