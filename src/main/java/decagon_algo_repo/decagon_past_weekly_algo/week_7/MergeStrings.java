@@ -1,4 +1,4 @@
-package decagon_algo_repo.decagon_past_weekly_algo.week_6;
+package decagon_algo_repo.decagon_past_weekly_algo.week_7;
 
 //Task
 //        Complete the function in your editor.

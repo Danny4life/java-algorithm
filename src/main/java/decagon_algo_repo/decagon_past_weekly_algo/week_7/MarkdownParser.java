@@ -1,4 +1,4 @@
-package decagon_algo_repo.decagon_past_weekly_algo.week_6;
+package decagon_algo_repo.decagon_past_weekly_algo.week_7;
 
 //Background
 //        Markdown is a formatting syntax used by many documents (these instructions, for example!)
