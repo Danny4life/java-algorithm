@@ -48,6 +48,8 @@ package decagon_algo_repo.decagon_past_weekly_algo.week_7;
 //        path is a valid absolute Unix path.
 
 
+import java.util.Stack;
+
 public class SimplifyPath {
     public static void main(String[] args) {
 
@@ -55,7 +57,27 @@ public class SimplifyPath {
 
     public static String simplifyPath(String path) {
 
-        return path;
+        Stack<String> stack = new Stack<String>();
+        for(String file:path.split("/"))
+        {
+            if(!file.isEmpty() && file.equals(".."))
+            {
+                if(!stack.isEmpty())
+                {
+                    stack.pop();
+                }
 
+            }
+            else if(!file.equals("..") && !file.equals(".") && !file.equals(""))
+            {
+                stack.push(file);
+            }
+        }
+        StringBuilder sb = new StringBuilder();
+        for(String s:stack)
+        {
+            sb.append("/").append(s);
+        }
+        return sb.length()==0 ? "/":sb.toString();
     }
 }
