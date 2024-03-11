@@ -1,9 +1,10 @@
-package decagon_algo_repo.decagon_past_weekly_algo.week_9;
+package decagon_algo_repo.decagon_past_weekly_algo.week_8;
 
+import java.util.ArrayList;
 // task given already
-//Candidate Instructions
-//        Create a function named divisors that takes a non-negative integer
-//        and returns an array with all of the integer's divisors (except for 1 and the number itself).
+
+//Create a function named divisors that takes a non-negative integer and returns
+//        an array with all of the integer's divisors (except for 1 and the number itself).
 //        If the number is prime return an empty array.
 //
 //        Challenge.divisors(n)
@@ -20,9 +21,8 @@ package decagon_algo_repo.decagon_past_weekly_algo.week_9;
 //        n	Return Value
 //        12	[2,3,4,5,6]
 //        13	[]
-//        25
-
-// Test case
+//        25	[5]
+//
 //import java.util.ArrayList;
 //import java.util.Arrays;
 //import org.junit.jupiter.api.DisplayName;
@@ -47,9 +47,7 @@ package decagon_algo_repo.decagon_past_weekly_algo.week_9;
 //}
 
 
-import java.util.ArrayList;
-
-public class FindTheDivisors {
+public class FindTheDivisor {
     public static void main(String[] args) {
 
     }

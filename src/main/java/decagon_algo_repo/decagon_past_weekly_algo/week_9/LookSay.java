@@ -1,5 +1,6 @@
 package decagon_algo_repo.decagon_past_weekly_algo.week_9;
 
+// given already
 //Task
 //        Your task is to create a function that will take an integer
 //        and return the result of the look-and-say function on that integer.
@@ -43,11 +44,42 @@ package decagon_algo_repo.decagon_past_weekly_algo.week_9;
 //}
 public class LookSay {
     public static void main(String[] args) {
-
+        System.out.println(lookSay(12));
     }
 
     public static int lookSay(int number) {
 
-        return 0;
+        // Convert the given number to a string to easily iterate over its digits
+        String input = String.valueOf(number);
+
+        // Use StringBuilder to store the result
+        StringBuilder result = new StringBuilder();
+
+        // Initialize variables to track the current digit and its count and store in a char variable
+        char currentDigit = input.charAt(0);
+        int count = 1;
+
+        // Iterate over the digits starting from the second digit
+        for (int i = 1; i < input.length(); i++) {
+            // Get the current digit
+            char digit = input.charAt(i);
+            // Check if the current digit is the same as the previous one
+            if (digit == currentDigit) {
+                // Increment count if current digit is the same as previous one
+                count++;
+            } else {
+                // Append count and digit to the result
+                result.append(count).append(currentDigit);
+                // Reset count and update current digit
+                count = 1;
+                currentDigit = digit;
+            }
+        }
+
+        // Append count and digit of the last group
+        result.append(count).append(currentDigit);
+
+        // Convert the result to integer
+        return Integer.parseInt(result.toString());
     }
 }
