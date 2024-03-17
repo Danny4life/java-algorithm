@@ -1,5 +1,6 @@
 package decagon_algo_repo.decagon_past_weekly_algo.week_7;
 
+// given already
 //Task
 //        Finish the function numberToOrdinal, which should take a number and
 //        return it as a string with the correct ordinal indicator suffix (in English).

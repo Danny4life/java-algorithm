@@ -1,5 +1,6 @@
 package decagon_algo_repo.decagon_past_weekly_algo.week_7;
 
+// given already
 //Task
 //        An IP address contains four numbers(0-255) and separated by dots.
 //        It can be converted to a number by this way:
