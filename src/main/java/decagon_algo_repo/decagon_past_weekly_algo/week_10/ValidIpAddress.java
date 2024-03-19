@@ -119,11 +119,82 @@ import java.util.ArrayList;
 
 public class ValidIpAddress {
     public static void main(String[] args) {
+        System.out.println(validIPAddresses("1921680"));
 
     }
 
-    public ArrayList<String> validIPAddresses(String string) {
-        // Write your code here.
-        return new ArrayList<String>();
+    public static ArrayList<String> validIPAddresses(String string) {
+        // Initialize an ArrayList to store valid IP addresses found
+        ArrayList<String> ipAddressesFound = new ArrayList<String>();
+
+        // Iterate through the characters of the input string to generate possible IP addresses
+        for (int i = 1; i < Math.min((int) string.length(), 4); i++) {
+            // Initialize an array to store parts of the current IP address being generated
+            String[] currentIPAddressParts = new String[] {"", "", "", ""};
+
+            // Extract the first part of the IP address
+            currentIPAddressParts[0] = string.substring(0, i);
+            // Check if the first part is a valid IP address part
+            if (!isValidPart(currentIPAddressParts[0])) {
+                continue; // If not valid, skip to the next iteration
+            }
+
+            // Iterate through the characters starting from the second part of the IP address
+            for (int j = i + 1; j < i + Math.min((int) string.length() - i, 4); j++) {
+                // Extract the second part of the IP address
+                currentIPAddressParts[1] = string.substring(i, j);
+                // Check if the second part is a valid IP address part
+                if (!isValidPart(currentIPAddressParts[1])) {
+                    continue; // If not valid, skip to the next iteration
+                }
+
+                // Iterate through the characters starting from the third part of the IP address
+                for (int k = j + 1; k < j + Math.min((int) string.length() - j, 4); k++) {
+                    // Extract the third and fourth parts of the IP address
+                    currentIPAddressParts[2] = string.substring(j, k);
+                    currentIPAddressParts[3] = string.substring(k);
+
+                    // Check if the third and fourth parts are valid IP address parts
+                    if (isValidPart(currentIPAddressParts[2]) && isValidPart(currentIPAddressParts[3])) {
+                        // If all parts are valid, join them and add the resulting IP address to the list
+                        ipAddressesFound.add(join(currentIPAddressParts));
+                    }
+                }
+            }
+        }
+
+        // Return the list of valid IP addresses found
+        return ipAddressesFound;
     }
+
+    // Method to check if a string represents a valid IP address part
+    public static boolean isValidPart(String string) {
+        // Convert the string to an integer
+        int stringAsInt = Integer.parseInt(string);
+        // Check if the integer is within the valid range for an IP address part
+        if (stringAsInt > 255) {
+            return false;
+        }
+        // Check if there are leading zeros in the string (invalid in an IP address)
+        return string.length() == Integer.toString(stringAsInt).length();
+    }
+
+    // Method to join parts of an IP address into a single string
+    public static String join(String[] strings) {
+        // Initialize a StringBuilder to construct the IP address string
+        StringBuilder sb = new StringBuilder();
+        // Iterate through the parts of the IP address
+        for (int l = 0; l < strings.length; l++) {
+            // Append each part to the StringBuilder
+            sb.append(strings[l]);
+            // If it's not the last part, append a dot to separate parts
+            if (l < strings.length - 1) {
+                sb.append(".");
+            }
+        }
+        // Return the constructed IP address string
+        return sb.toString();
+    }
+
 }
+
