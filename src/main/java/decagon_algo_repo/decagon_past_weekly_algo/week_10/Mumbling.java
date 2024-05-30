@@ -1,6 +1,6 @@
 package decagon_algo_repo.decagon_past_weekly_algo.week_10;
 
-// given already
+// given the codewar link tomorrow
 //This challenge requires you to create a solution only based on the input and output to your function.
 //
 //        The examples below show you how to write function accum:

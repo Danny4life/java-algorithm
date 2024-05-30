@@ -1,6 +1,6 @@
 package decagon_algo_repo.decagon_past_weekly_algo.week_6;
 
-// Given Already
+// Given Already to sqd22
 
 //Task
 //        In this challenge, your task is to write a function to identify
@@ -121,12 +121,20 @@ package decagon_algo_repo.decagon_past_weekly_algo.week_6;
 //    }
 //}
 
+
+
 public class IsogramWithTolerance {
     public static void main(String[] args) {
 
+        // test all your cases here to get to done
+        System.out.println(isogramWithTolerance("subdermatoglyphic", 0));
     }
 
+
+
     public static boolean isogramWithTolerance(String s, int k) {
+
+        // Do your magic here
 
         return true;
     }
