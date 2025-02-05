@@ -1,5 +1,5 @@
 package decagon_algo_repo.decagon_past_weekly_algo.week_5;
-//
+// Task given already
 //Array Of Products
 //        Write a function that takes in a non-empty array of integers and returns an array of the same length, where each element in the output array is equal to the product of every other number in the input array.
 //

@@ -56,10 +56,53 @@ package decagon_algo_repo.decagon_past_weekly_algo.week_7;
 public class NumberAndIpAddress {
 
     public static void main(String[] args) {
-
+        System.out.println(numberAndIPaddress("10.0.3.193"));
     }
     public static String numberAndIPaddress(String s) {
-        return s;
+        // if the input contains a dot, indicate it's an IP address
+        if (s.contains(".")) {
+            // If The input is an IP address, convert it to a number
+            return convertIpsToNumber(s);
+        } else {
+            // The input is a number, convert it to an IP address
+            return convertNumberToIpAddress(s);
+        }
+    }
+
+    // Method to convert an IP address to a number
+    private static String convertIpsToNumber(String ip) {
+        // Split the IP address into its four parts using string split method
+        String[] spiltParts = ip.split("\\.");
+        // Initialize a variable to store the resulting number
+        long resultingNum = 0;
+        // loop through each part of the IP address
+        for (int i = 0; i < spiltParts.length; i++) {
+            // Convert each part to an integer and add it to the number
+            resultingNum = resultingNum * 256 + Integer.parseInt(spiltParts[i]);
+        }
+        // Return the resulting number as a string
+        return String.valueOf(resultingNum);
+    }
+
+    // Method to convert a number to an IP address
+    private static String convertNumberToIpAddress(String number) {
+        // Convert the input number from a string to a long
+        long num = Long.parseLong(number);
+        // Initialize a StringBuilder to create the IP address
+        StringBuilder res = new StringBuilder();
+        // Iterate through each of the four 8-bit segments of the number
+        for (int i = 3; i >= 0; i--) {
+            // Extract the 8-bit segment using bitwise >> operations
+            long segment = (num >> (8 * i)) & 255;
+            // Append the segment to the IP address
+            res.append(segment);
+            // Add a dot after each segment except the last one
+            if (i > 0) {
+                res.append(".");
+            }
+        }
+        // Return the constructed IP address as a string
+        return res.toString();
     }
 }
 

@@ -1,5 +1,5 @@
 package decagon_algo_repo.decagon_past_weekly_algo.week_7;
-// given already
+// given already sqd22
 //Task
 //        Write a function capitalize_words(s) which capitalizes every word in the non-null (but possibly empty)
 //        string s. A word is defined as a series of characters bordered by space characters

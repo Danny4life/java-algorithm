@@ -1,5 +1,5 @@
 package decagon_algo_repo.decagon_past_weekly_algo.week_7;
-
+// given to sqd22
 //Task
 //        Complete the function in your editor.
 //

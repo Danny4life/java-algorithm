@@ -1,4 +1,5 @@
 package decagon_algo_repo.decagon_past_weekly_algo.week_8;
+// given sqd22
 
 //Given an array of buildings and a direction that all of the buildings face,
 //        return an array of the indices of the buildings that can see the sunset.
@@ -214,4 +215,9 @@ public class SunsetViews {
 
     }
 }
+
+
+
+
+
 

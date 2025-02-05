@@ -1,5 +1,5 @@
 package decagon_algo_repo.decagon_past_weekly_algo.week_8;
-
+// given sqd22
 
 //Description
 //        Given an array of integers heights of length n, indicating that there are n buildings,

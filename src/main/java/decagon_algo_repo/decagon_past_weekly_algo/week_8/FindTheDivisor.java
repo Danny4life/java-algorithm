@@ -1,7 +1,8 @@
 package decagon_algo_repo.decagon_past_weekly_algo.week_8;
+// task given already to 22
 
 import java.util.ArrayList;
-// task given already
+
 
 //Create a function named divisors that takes a non-negative integer and returns
 //        an array with all of the integer's divisors (except for 1 and the number itself).

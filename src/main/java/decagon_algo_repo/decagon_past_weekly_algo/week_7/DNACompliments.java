@@ -1,6 +1,6 @@
 package decagon_algo_repo.decagon_past_weekly_algo.week_7;
 
-//Given already
+//Given already to sqd22
 
 
 //Background

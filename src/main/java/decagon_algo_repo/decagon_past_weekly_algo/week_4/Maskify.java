@@ -1,6 +1,6 @@
 package decagon_algo_repo.decagon_past_weekly_algo.week_4;
 
-// given already
+// given already to sqd22
 
 //Usually when you buy something, you're asked whether your credit card number,
 //        phone number or answer to your most secret question is still correct.
