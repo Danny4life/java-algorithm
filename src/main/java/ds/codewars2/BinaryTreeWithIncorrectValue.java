@@ -1,4 +1,4 @@
-package ds.bt;
+package ds.codewars2;
 
 // https://www.codewars.com/kata/63f13a354a828b0041979359/train/java
 
