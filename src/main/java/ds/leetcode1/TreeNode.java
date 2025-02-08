@@ -4,10 +4,11 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class TreeNode {
-    int val;
+    int val; // Stores the value of the node
 
-    TreeNode left;
-    TreeNode right;
+    TreeNode left;  // Reference to the left child node
+
+    TreeNode right;  // Reference to the right child node
 
     public TreeNode(int val) {
         this.val = val;
