@@ -46,7 +46,9 @@ class BinarySearchTree{
         if (root == null || root.val == val) {
             return root; // Found or not found (null)
         }
+        // Use this for the solution on leetcode
         //return (val < root.val) ? searchBST(root.left, val) : searchBST(root.right, val);
+        // use this for the example
         return (val < root.val) ? searchBSTRec(root.left, val) : searchBSTRec(root.right, val);
     }
 
